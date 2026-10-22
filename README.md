@@ -8,6 +8,8 @@ This is a genuine DEC PDP-11/05 front panel, given to me in working condition bu
 
 An ESP32 now runs the panel. It is thousands of times faster than the original 11/05 and has more than 100 times the memory, yet the lights and toggles still do what a front panel should. Flip the switches, press the buttons, and see what happens.
 
+![PDP-11/05 Panel Reawakening](media/02.png)
+
 ## Modes
 
 The three low switches select a mode, and toggling START activates it.
