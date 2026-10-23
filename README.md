@@ -38,10 +38,11 @@ Both boards are home-made, double-sided, and documented in the technical manual 
 
 ## Documentation
 
-- [User Manual](docs/PDP-11-05_Panel_Reawakening-User_Manual.pdf): how to operate the piece
-- [Technical Manual](docs/PDP-11-05_Panel_Reawakening-Technical_Manual.pdf): schematics, PCB layouts, BOM, assembly, and firmware overview
-- [Quick Reference](docs/PDP-11-05_Panel_Reawakening-Quick_Reference.pdf): one-page switch guide
-<!-- TODO: adjust file names and extensions to match what you put in docs/ -->
+- [User Manual](doc/PDP-11-05_Panel_Reawakening-User_Manual.pdf): how to operate the piece
+- [Technical Manual](doc/PDP-11-05_Panel_Reawakening-Technical_Manual.pdf): schematics, PCB layouts, BOM, assembly, and firmware overview
+- [Quick Reference](doc/PDP-11-05_Panel_Reawakening-Quick_Reference_Full_Page.pdf): one-page guide
+- [Quick Reference](doc/PDP-11-05_Panel_Reawakening-Quick_Reference_Full_HalfPage_2up.pdf): half-page guide
+
 
 ## Firmware
 
