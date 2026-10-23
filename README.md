@@ -38,15 +38,15 @@ Both boards are home-made, double-sided, and documented in the technical manual 
 
 ## Documentation
 
-- [User Manual](doc/PDP-11-05_Panel_Reawakening-User_Manual.pdf): how to operate the piece
-- [Technical Manual](doc/PDP-11-05_Panel_Reawakening-Technical_Manual.pdf): schematics, PCB layouts, BOM, assembly, and firmware overview
-- [Quick Reference](doc/PDP-11-05_Panel_Reawakening-Quick_Reference_Full_Page.pdf): one-page guide
-- [Quick Reference](doc/PDP-11-05_Panel_Reawakening-Quick_Reference_HalfPage_2up.pdf): half-page guide
+- [User Manual](doc/PDP-11-05_Panel_Reawakening-User_Manual.pdf): Operation guide.
+- [Technical Manual](doc/PDP-11-05_Panel_Reawakening-Technical_Manual.pdf): Schematics, PCB layouts, BOM, assembly, and firmware overview.
+- [Quick Reference](doc/PDP-11-05_Panel_Reawakening-Quick_Reference_Full_Page.pdf): One page guide
+- [Quick Reference](doc/PDP-11-05_Panel_Reawakening-Quick_Reference_HalfPage_2up.pdf): Half page guide
 
 
 ## Firmware
 
-The firmware is C++ for the ESP32, built around a cooperative task scheduler. Main pieces:
+The firmware is C++ for the ESP32, built around a cooperative task scheduler. Main components:
 
 - **Task scheduler:** cooperative tasks, no RTOS juggling
 - **Panel I/O:** switch scanning with debounce, and a display refresh task that writes the LEDs only when something changes
@@ -56,7 +56,6 @@ The firmware is C++ for the ESP32, built around a cooperative task scheduler. Ma
 
 ### Building
 
-<!-- TODO: confirm these steps match your setup -->
 1. Install [PlatformIO](https://platformio.org/) (VS Code extension or CLI).
 2. Clone this repository and open the folder.
 3. Connect the ESP32 and run `pio run -t upload`.
@@ -75,7 +74,7 @@ The BT201 needs its SD card loaded with the audio content. See the user manual f
 
 ## Status
 
-The piece is complete and running. It is an entry in the 2026 Hackaday Retrocomputing Challenge (Old Iron category).
+The panel is complete and running. It is an entry in the 2026 Hackaday Retrocomputing Challenge (Old Iron category).
 
 - Hackaday project page: <!-- TODO: add link -->
 - Demo video: <!-- TODO: add link -->
