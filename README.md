@@ -4,7 +4,7 @@ A multi-media art project bringing a PDP-11/05 front panel back to life.
 
 ## What it is
 
-This is a genuine DEC PDP-11/05 front panel, given to me in working condition but with nothing to drive it. I gave it a new purpose as an interactive art piece. The panel and its electronics are mounted on a repurposed Apple Cinema Display stand, a grandchild supporting the parent.
+This is a genuine DEC PDP-11/05 front panel, given to me in working condition but with nothing to drive it. I gave it a new purpose as an interactive art piece. The panel and its electronics are mounted on a repurposed Apple Cinema Display stand, a grandchild supporting the grandparent.
 
 An ESP32 now runs the panel. It is thousands of times faster than the original 11/05 and has more than 100 times the memory, yet the lights and toggles still do what a front panel should. Flip the switches, press the buttons, and see what happens.
 
