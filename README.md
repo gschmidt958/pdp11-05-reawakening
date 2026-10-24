@@ -77,7 +77,7 @@ The BT201 needs its SD card loaded with the audio content. See the user manual f
 The panel is complete and running. It is an entry in the 2026 Hackaday Retrocomputing Challenge (Old Iron category).
 
 - Hackaday project page: <!-- TODO: add link -->
-- Full demo video: [YouTube](https://youtu.be/WRUo1USeS0c)
+- Full demo video: [YouTube](https://youtu.be/IMCUDBIAlJI)
 - Condensed self-destruct sequence: [YouTube](https://youtu.be/9wBbOCsPhzk)
 
 ## About the key
