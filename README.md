@@ -66,10 +66,12 @@ The BT201 needs its SD card loaded with the audio content. See the user manual f
 
 | Folder | Contents |
 |--------|----------|
+| `docs/` | User manual, technical manual, quick reference |
+| `layout/` | Interface and control board layouts |
+| `lib/` | Project libraries (task scheduler, flash settings, disable comm) |
 | `src/` | Main firmware source |
 | `lib/` | Project libraries (task scheduler, BT201 driver, and others) |
-| `docs/` | User manual, technical manual, quick reference |
-| `media/` | Photos and video |
+| `media/` | Project photos |
 
 ## Status
 
