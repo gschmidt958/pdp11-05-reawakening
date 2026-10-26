@@ -46,14 +46,15 @@ Both boards are home-made, double-sided, and documented in the technical manual 
 
 ## Firmware
 
-The firmware is C++ for the ESP32, built around a custom cooperative task scheduler. Main components:
+The firmware is C++ for the ESP32, built around a custom cooperative task scheduler.
+Main tasks:
 
 - **Task scheduler:** Cooperative tasks, no RTOS juggling
 - **Panel I/O:** Switch scanning with debounce, and a display refresh task that writes the LEDs when output pattern changes.
 - **BT201 driver:** Command/response protocol for the sound card, with a transmitter task, a receiver task, and a parent task.
 - **VU meter:** Audio-reactive LED displays with several music and voice styles.
 - **BLE remote:** Panel switches can be operated over Bluetooth Low Energy.
-- **Patterm task: ** Sequence and algorithm based pattern task.
+- **Pattern tasks:** Sequence and algorithm based pattern task.
 
 ### Building
 
