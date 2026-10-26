@@ -29,10 +29,10 @@ At power on, the panel plays a verbal greeting. There may be other surprises. Th
 
 ## Hardware
 
-- **Panel:** original PDP-11/05 front panel
-- **Interface board:** shift registers read the switches and drive the LEDs, with HCT logic bridging to the panel's legacy TTL levels
-- **Control board:** ESP32, BT201 Bluetooth/MP3 sound card, DS3231 real-time clock, and audio conditioning for the VU meter input
-- **Power:** 5 V, 2 A wall supply
+- **Panel:** Original PDP-11/05 front panel
+- **Interface board:** Shift registers read the switches and drive the LEDs, with HCT logic bridging to the panel's legacy TTL levels
+- **Control board:** ESP32, BT201 Bluetooth/MP3 sound card, DS3231 real-time clock, audio conditioning for the VU meter input, and level shifting.
+- **Power:** 5V, 2A wall supply.
 
 Both boards are home-made, double-sided, and documented in the technical manual with schematics, layouts, and a bill of materials.
 
@@ -46,13 +46,14 @@ Both boards are home-made, double-sided, and documented in the technical manual 
 
 ## Firmware
 
-The firmware is C++ for the ESP32, built around a cooperative task scheduler. Main components:
+The firmware is C++ for the ESP32, built around a custom cooperative task scheduler. Main components:
 
-- **Task scheduler:** cooperative tasks, no RTOS juggling
-- **Panel I/O:** switch scanning with debounce, and a display refresh task that writes the LEDs only when something changes
-- **BT201 driver:** command/response protocol for the sound card, with a transmitter task, a receiver task, and a parent task
-- **VU meter:** audio-reactive LED displays with several music and voice styles
-- **BLE remote:** panel switches can be operated over Bluetooth Low Energy
+- **Task scheduler:** Cooperative tasks, no RTOS juggling
+- **Panel I/O:** Switch scanning with debounce, and a display refresh task that writes the LEDs when output pattern changes.
+- **BT201 driver:** Command/response protocol for the sound card, with a transmitter task, a receiver task, and a parent task.
+- **VU meter:** Audio-reactive LED displays with several music and voice styles.
+- **BLE remote:** Panel switches can be operated over Bluetooth Low Energy.
+- **Patterm task: ** Sequence and algorithm based pattern task.
 
 ### Building
 
@@ -60,7 +61,7 @@ The firmware is C++ for the ESP32, built around a cooperative task scheduler. Ma
 2. Clone this repository and open the folder.
 3. Connect the ESP32 and run `pio run -t upload`.
 
-The BT201 needs its SD card loaded with the audio content. See the user manual for the folder and channel layout.
+The BT201 needs its SD card loaded with the audio content. See the user manual for the folder and channel organization.
 
 ## Repository layout
 
